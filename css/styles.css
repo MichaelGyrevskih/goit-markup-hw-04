@@ -192,6 +192,12 @@ a.address-text {
 {
   background: #2e2f42;
   padding: 188px 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .section-solutions .title
 {
@@ -210,7 +216,11 @@ a.address-text {
     border: none;
     gap: 0.62rem;
 }
-
+.section-solutions .title
+{
+    background: none;
+}
+/* ::after */
 /* ---------Section-AboutUs-----------*/
 
 .aboutus-list
@@ -225,6 +235,21 @@ a.address-text {
 }
 .aboutus-item .subtitle {
     margin-bottom: 8px;
+}
+.aboutus-div-ico {
+    width: 16.5rem;
+    height: 7rem;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus-div-ico svg {
+    width: 64px;
+    height: 64px;
 }
 /* ---------Section-Team----------- */
 .section-team 
@@ -267,8 +292,33 @@ padding: 32px 0;
  {
  margin-bottom: 8px;
  }
- 
- 
+ .team-ico-list
+ {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    margin:8px 16px auto;
+    gap: 24px;
+ }
+ .team-ico-item
+ {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#4D5AE5;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+ }
+ .team-ico-item svg {
+    
+     width: 12px;
+     height: 12px;
+ }
+ /* .team-ico-div
+ {
+  
+ } */
 /* ---------Section-Portfolio-----------*/
 .portfolio-list {
     display: flex;
@@ -277,7 +327,15 @@ padding: 32px 0;
 }
 .portfolio-item {
       width: calc((100% - 48px) / 3);
+       border-bottom: 1px solid #e7e9fc;
+        border-left: 1px solid #e7e9fc;
+        border-right: 1px solid #e7e9fc;
  } 
+ .portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 1px 6px 0 rgba(46, 47, 66, 0.08);
+ }
  .portfolio-item .subtitle
  {
     margin-bottom: 8px;
@@ -294,6 +352,10 @@ padding: 32px 0;
    {
     margin-bottom: 72px;
    }
+
+   /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+0 1px 1px 0 rgba(46, 47, 66, 0.16),
+0 1px 6px 0 rgba(46, 47, 66, 0.08); */
 /* ---------Section-Footer----------- */
 .footer {
     background: #2e2f42;
