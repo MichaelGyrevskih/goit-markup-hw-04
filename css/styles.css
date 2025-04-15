@@ -171,12 +171,13 @@ h6 {
 {
     display: flex;
     justify-content:space-between;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-border
 {
     border-bottom: 1px solid #e7e9fc;
-    
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -186,7 +187,7 @@ a.navigation-text {
     display: block;
 }
 a.address-text {
-    color: #434455;
+    color: #2a2e85;
     padding: 24px 0;
     display: block;
 }
@@ -204,6 +205,7 @@ position: relative;
    border-radius: 0.12rem;
    width: 100%;
    height: 4px;
+  border-radius: 2px;
 }
 /* ---------Section-Solutions----------- */
 .section-solutions
@@ -233,6 +235,7 @@ position: relative;
     height:56px;
     border: none;
     gap: 0.62rem;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-solutions .title
 {
@@ -263,6 +266,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .aboutus-div-ico svg {
@@ -313,34 +317,43 @@ padding: 32px 0;
  .team-ico-list
  {
     display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
+    justify-content: center;
     margin:8px 16px auto;
     gap: 24px;
  }
+ .social-team-link
+ {
+  width: 100%;
+  height: 100%;
+  background-color:#4d5ae5;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .social-team-link:hover,
+ .social-team-link:focus:focus
+ {
+background-color: #31D0AA;
+ }
+ 
  .team-ico-item
  {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    /* border-radius: 50%;
     background-color:#4D5AE5;
-     display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; 
- }
- .team-ico-item:hover
- {
-   background-color: #31D0AA;
+    align-items: center;  */
  }
  .team-ico-item svg {
     display: flex;
      width: 16px;
      height: 16px;
  }
- /* .team-ico-div
- {
-  
- } */
+
 /* ---------Section-Portfolio-----------*/
 .portfolio-list {
     display: flex;
@@ -353,6 +366,7 @@ padding: 32px 0;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
         position: relative;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  } 
  .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -362,6 +376,7 @@ padding: 32px 0;
  .portfolio-item:hover .overlay-text 
  {
     transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .portfolio-item .subtitle
  {
@@ -463,6 +478,7 @@ margin-right:0;
     max-width: 264px;
     padding-bottom: 16px;
 }
+
 
 /* .logo-foot {
     text-transform: uppercase;
